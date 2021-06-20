@@ -1,0 +1,44 @@
+.indexPage {
+    background-image: url(images/gameofthrones-s07.jpg);
+    background-repeat: no-repeat;
+    background-color: cornflowerblue;
+    background-size: cover;
+
+}
+
+h1,
+h2 {
+    color: rgb(250, 250, 250);
+    text-align: center;
+}
+
+.seasons {
+    width: 300px;
+    border: solid gold 5px;
+    background-color: azure;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+p {
+    color: rgb(228, 4, 4);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.firstBox {
+    margin: auto;
+    text-align: center;
+    background-color: darkkhaki;
+}
+
+li {
+    list-style-type: none;
+}

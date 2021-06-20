@@ -1,0 +1,179 @@
+@media screen and (min-width: 0) and (max-width: 425px) {
+    .first_screen__wrap {
+        display: none;
+    }
+    
+    .main_wrap {
+        width: 100%;
+        max-width: 425px;
+    }
+
+    .first_screen {
+        padding: 10px;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .blue_color {
+        color: #3298f2;
+    }
+
+    .first_screen_left {
+        padding-left: 30px;
+        width: 100%;
+        max-width: 425px;
+        margin: 0;
+    }
+
+    .first_screen h2 {
+        font-size: 19px;
+        line-height: 26px;
+    }
+
+    .first_screen_left p {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .first_screen_left .OKTEN_scool {
+        font-size: 88px;
+        line-height: 100px;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .first_screen_left h1, .first_screen_left h1 span {
+        font-size: 72px;
+        line-height: 85px;
+        -webkit-text-stroke-color: #3298f2;
+    }
+    
+    .first_screen_right {
+        width: 100%;
+        max-width: 425px;
+    }
+    
+
+    .header_button {
+        display: none;
+    }
+
+    
+    .header_logo {
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    
+
+    .btn_mob {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        
+    }
+
+    .btn_mob span {
+        width: 40%;
+        height: 4px;
+        background-color: #3298F2;
+        border-radius: 5px;
+        position: relative;
+        transition: background-color 300ms 100ms;
+    }
+
+    .btn_mob span::before, .btn_mob span::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #3298F2;
+        border-radius: 5px;
+    }
+
+    .btn_mob span::before {
+        top: -10px;
+    }
+
+    .btn_mob span::after {
+        bottom: -10px;
+    }
+
+    .header_nav {
+        position: fixed;
+        background: #3298F2;
+        right: -100%;
+        flex-direction: column;
+        width: 100%;
+        top: 70px;
+        height: 93vh;
+        transition: right 1000ms;
+        padding-top: 100px;
+        row-gap: 25px;
+        cursor: pointer;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        z-index: 999;
+                
+    }
+
+    .header_nav a {
+        font-weight: 900;
+        font-size: 24px;
+        color: #fff;
+        
+    }
+
+    .active .header_nav {
+        right: 0;
+    }
+
+    .btn_mob span::before {
+        transition-property: top, transform;
+    }
+
+    .btn_mob span::after {
+        transition-property: bottom, transform;
+    }
+
+    .btn_mob span::before, .btn_mob span::after {
+        transition-duration: 300ms, 300ms;
+        transition-delay: 330ms, 0ms;
+    }
+
+    .active .btn_mob span::before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .active .btn_mob span::after {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    .active .btn_mob span::before, .active .btn_mob span::after {
+        transition-duration: 300ms, 300ms;
+        transition-delay: 0ms, 300ms;
+    }
+
+    .active .btn_mob span {
+        background-color: transparent;
+    }
+
+    .header {
+        background-color: none;
+    }
+
+    .play_button__wrap {
+        bottom: 30px;
+    }
+
+}
